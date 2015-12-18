@@ -12,6 +12,13 @@ struct _CommandInput{
 
     void getInput();
 };
+
+struct _BooleanInput{
+    bool boolean;
+
+    void getInput();
+};
+
 struct _CommandArgumentInput{
     char command;
     char argument;
@@ -31,10 +38,12 @@ struct _NumberNumberInput{
     void getInput();
 };
 
-
 typedef struct _CommandInput CommandInput;
+typedef struct _BooleanInput BooleanInput;
 typedef struct _CommandArgumentInput CommandArgumentInput;
 typedef struct _CommandNumberInput CommandNumberInput;
 typedef struct _NumberNumberInput NumberNumberInput;
+
+string EnterPlayerName( );
 
 #endif
