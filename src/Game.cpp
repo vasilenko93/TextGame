@@ -12,17 +12,23 @@ int Game::mainloop( )
     {
         int menureturn = showmainmenu( );
 
-        // If no game active
+        // New game
         if( menureturn == 1 )
             createnewgame();
 
-        if( menureturn == 2 )
-            //Load
+        // Load game
+        //if( menureturn == 2 )
+        //{
+        //
+        //}
 
+        // Quit game
         if( menureturn == 3 )
+        {
             return 0;
+        }
 
-        // If game is active
+        // Close active game
         if( menureturn == 6 )
             closeactivegame();
 
